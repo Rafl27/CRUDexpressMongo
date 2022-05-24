@@ -1,6 +1,4 @@
-//elXCrifLRD9OkQnd
 
-//mongodb+srv://rafael:elXCrifLRD9OkQnd@apimongo.94xcr.mongodb.net/?retryWrites=true&w=majority
 
 //import express from 'express';
 const express = require('express');
