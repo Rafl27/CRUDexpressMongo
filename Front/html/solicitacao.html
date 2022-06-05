@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/sideBar.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="./css/solicitacao.css">
+
+    <title>Village</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <img src="./images/village-logos_black.png" id="village-logo" alt="" srcset="">
+        </div>
+
+        <ul class="list-unstyled components">
+          <p>Village Menu</p>
+          <li class="active">
+            <a
+              href="#homeSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Reserva de áreas</a
+            >
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="#">Área de churrasco</a>
+              </li>
+              <li>
+                <a href="#">Piscina - Família</a>
+              </li>
+              <li>
+                <a href="#">Área de eventos</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Visitas</a>
+          </li>
+          <li>
+            <a
+              href="#pageSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Contas</a
+            >
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="#">Luz</a>
+              </li>
+              <li>
+                <a href="#">Água</a>
+              </li>
+              <li>
+                <a href="#">Internet</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Solicitação de serviço</a>
+          </li>
+          <li>
+            <a href="#">Perfil</a>
+          </li>
+          
+        </ul>
+
+        <!-- <ul class="list-unstyled CTAs">
+          <li>
+            <a
+              href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+              class="download"
+              >Download source</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://bootstrapious.com/p/bootstrap-sidebar"
+              class="article"
+              >Back to article</a
+            >
+          </li>
+        </ul> -->
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-black">
+              <i class="fas fa-align-left"></i>
+              <span>Mostrar Sidebar</span>
+            </button>
+            <button
+              class="btn btn-dark d-inline-block d-lg-none ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-align-justify"></i>
+            </button>
+            <!-- <p id="page-name">Hello</p> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                    <img src="./images/211694_bell_icon.png" id="bell" alt="" srcset="">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                      <img src="./images/9004778_menu_list_navigation_options_icon.png" id="options" alt="" srcset="">
+                  </a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container rounded bg-white mt-5 mb-5">
+            <div class="row">
+                <!-- <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="square mt-5" width="150px" src="./images/GettyImages-1234656746.webp"><span class="font-weight-bold">Elon Musk</span><span class="text-black-50">elon@mail.com</span><span> </span></div>
+                </div> -->
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Informações</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">Nome</label><input type="text" class="form-control" placeholder="Nome" value=""></div>
+                            <div class="col-md-6"><label class="labels">Sobrenome</label><input type="text" class="form-control" value="" placeholder="Sobrenome"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Número de telefone</label><input type="text" class="form-control" placeholder="Númedo de telefone" value=""></div>
+                            <div class="col-md-12"><label class="labels">E-mail</label><input type="text" class="form-control" placeholder="E-mail" value=""></div>
+                            <!-- <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                            <div class="col-md-12"><label class="labels">Postcode</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                            <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                            <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                            <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                            <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div> -->
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Idade</label><input type="text" class="form-control" placeholder="Idade" value=""></div>
+                            <div class="col-md-6"><label class="labels">Situação</label><input type="text" class="form-control" value="" placeholder="Situação"></div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn btn-dark profile-button" type="button">Editar</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 py-5">
+                        <!-- <div class="d-flex justify-content-between align-items-center experience"><span>Localização</span><span class="border px-3 p-1 add-experience"><i class="fa fa-edit"></i>&nbsp;Editar</span></div><br> -->
+                        <div class="col-md-20"><label class="labels">Descrição do problema</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="16"></textarea>
+                        </div> 
+                        <br>
+                        <!-- <div class="col-md-12"><label class="labels">Número</label><input type="text" class="form-control" placeholder="Número" value=""></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sideBar.js"></script>
+    <script src="./js/solicitacao.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/sideBar.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="./css/visitas.css">
+  <script src="https://kit.fontawesome.com/cc24744fcf.js" crossorigin="anonymous"></script>
+
+  <title>Village - visitas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <img src="./images/village-logos_black.png" id="village-logo" alt="" srcset="">
+      </div>
+
+      <ul class="list-unstyled components">
+        <p>Village Menu</p>
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reserva de
+            áreas</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Área de churrasco</a>
+            </li>
+            <li>
+              <a href="#">Piscina - Família</a>
+            </li>
+            <li>
+              <a href="#">Área de eventos</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="visitas.html">Visitas</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contas</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#">Luz</a>
+            </li>
+            <li>
+              <a href="#">Água</a>
+            </li>
+            <li>
+              <a href="#">Internet</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Solicitação de serviço</a>
+        </li>
+        <li>
+          <a href="#">Perfil</a>
+        </li>
+
+      </ul>
+
+      <!-- <ul class="list-unstyled CTAs">
+          <li>
+            <a
+              href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+              class="download"
+              >Download source</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://bootstrapious.com/p/bootstrap-sidebar"
+              class="article"
+              >Back to article</a
+            >
+          </li>
+        </ul> -->
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-black">
+            <i class="fas fa-align-left"></i>
+            <span>Mostrar Sidebar</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <img src="./images/211694_bell_icon.png" id="bell" alt="" srcset="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="./images/9004778_menu_list_navigation_options_icon.png" id="options" alt="" srcset="">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-6 border-right">
+            <div class="p-3 py-5">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="text-right">Registrar nova visita</h4>
+              </div>
+
+              <div class="row mt-2">
+                <div class="col-md-6"><label class="labels">Nome</label><input type="text" class="form-control"
+                    placeholder="Nome" value=""></div>
+                <div class="col-md-6"><label class="labels">Sobrenome</label><input type="text" class="form-control"
+                    value="" placeholder="Sobrenome"></div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-md-12"><label class="labels">Númedo de telefone</label>
+                  <input type="text"class="form-control" placeholder="Númedo de telefone" value="">
+                </div>
+                
+                  <div class="col-md-12">
+                    <label class="labels">E-mail</label><input type="text" class="form-control" placeholder="E-mail" value="">
+                  </div>               
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-md-6"><label class="labels">Idade</label><input type="text" class="form-control"
+                    placeholder="Idade" value=""></div>
+                <div class="col-md-6"><label class="labels">Situação</label><input type="text" class="form-control"
+                    value="" placeholder="Situação"></div>
+              </div>
+
+              <div class="mt-5 text-center">
+                <button class="btn btn btn-dark profile-button" type="button">Editar</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-3 py-5">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="text-right">Meus visitantes</h4>
+              </div>
+              
+              <div style="overflow: auto; height: 300px;">
+             
+              <table id="tabela" class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!--Generated by script visitantes.js-->
+                </tbody>
+              </table>
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+              <button id="teste" class="btn btn-dark profile-button" type="button" data-toggle="modal" data-target="#modalCadastro">Cadastrar visitante</button>
+            </div>
+          </div>
+
+
+          <!-- Modal Cadastro-->
+          <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalCadastroLabel">Cadastro de visitante</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group" style="width: 300px;">
+                      <input type="text" class="form-control" id="nome" placeholder="Nome do visitante" required>                    
+                    </div>
+
+                    <div class="form-group" style="width: 300px;">
+                      <input type="email" class="form-control" id="email" placeholder="Email do visitante" required>
+                    </div>
+                    
+                    <div class="form-group" style="width: 200px;">
+                      <input type="text" class="form-control" id="telefone" placeholder="Telefone do visitante" required>
+                    </div>
+
+                    <div class="row ml-1">
+                      <small>* Todos os campos são de preenchimento obrigatório</small>
+                    </div>
+                                        
+                    <div class="text-right mt-5">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                      <button type="submit" class="btn btn-success">Confirmar</button>
+                    </div>
+
+                    
+                  </form>
+                </div>         
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Exclusao-->
+          <div class="modal fade" id="modalConfirmacao" tabindex="-1" aria-labelledby="modalConfirmacaoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  
+                  <form>
+                    <div class="container mb-5 mt-2">
+                      <span>Tem certeza que deseja excluir</span>
+                      <strong><span id="nomeToRemove"></span></strong> 
+                    </div>                    
+                    <div class="text-center">
+                      <button type="button" class="btn btn-secondary mx-5" data-dismiss="modal">Voltar</button>
+                      <button id="confirmaExclusao" onclick="teste()" type="submit" class="btn btn-danger">Confirmar</button>
+                    </div>                                      
+                  </form>
+                </div>         
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/sideBar.js"></script>
+  <script src="js/visitantes.js"></script>
+
+
+</body>
+
+</html>

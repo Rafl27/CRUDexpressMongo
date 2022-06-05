@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <title>Village - login</title>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <link href="../css/login.css" rel="stylesheet">
+
+  <!-- <script type="text/javascript" src="./json/users.json"></script> -->
+</head>
+
+<body
+  style="background-image: url(../images/background.png); background-repeat: no-repeat; background-size:100%; background-size: cover;">
+
+
+
+  <div class="container" style="
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  ">
+
+    <div class="row justify-content-center">
+      <div class="col-md-auto">
+        <form class="form-signin">
+          <div class="text-center mb-4">
+            <img src="../images/village-logos_black.png" style="opacity: 0.9;" alt="Logo village" width="200"
+              height="200">
+            <h5>Para acessar o sistema, por favor <b>autentique-se.</b></h5>
+          </div>
+
+          <div class="form-label-group mb-3">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+            <label for="inputEmail">Email</label>
+          </div>
+
+          <div class="form-label-group mb-0">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+            <label for="inputPassword">Senha</label>
+          </div>
+
+          <p id="alerta" class="aviso mt-1 mb-3">Email ou senha inválidos</p>
+
+          <button class="btn btn btn-primary btn-block" id="submit" type="button">Prosseguir</button>
+          <p class="mt-5 mb-5 text-muted text-center">&copy; 2022</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
